@@ -1,0 +1,16 @@
+- file: index
+  numbered: true
+
+- part: Introduction
+  chapters:
+  - file: intro/intro1
+  - file: intro/intro2
+
+- part: Core Code
+  chapters:
+  - file: core/main1
+  - file: core/main2
+
+- part: API
+  chapters:
+  - file: api/index
