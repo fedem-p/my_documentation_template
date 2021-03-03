@@ -3,7 +3,7 @@
 
 title: 
 author: Federico Puppo
-logo: ./docs/images/logo.png
+logo: "./images/LogoDotOrg_Black.png"
 # only_build_toc_files: true
 
 # Force re-execution of notebooks on each build.
