@@ -4,7 +4,7 @@
 with an introduction
 
 
-## A pull request
+## PS. If you like photography checkout my [project](https://www.eikonproject.org/)
 
 ### A subsubsection
 
