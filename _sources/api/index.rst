@@ -16,6 +16,6 @@ For the average user's workflows.
    :recursive:
 
    numpy.sum
-   
+   myproject
    
 
