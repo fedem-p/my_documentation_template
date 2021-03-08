@@ -1,6 +1,6 @@
 # A template to build documentation from any python code automatically
 The aim of this [repository](https://github.com/fedem-p/my_documentation_template) is to showcase a simple implementation of automatically generated documentation which uses jupyter-books (build) and github pages (deploy).
--> like this [one](https://fedem-p.github.io/auto_docum_template/)
+-> like this [one](https://fedem-p.github.io/my_documentation_template/)
 
 ## Mind Map
 1. create a repository
