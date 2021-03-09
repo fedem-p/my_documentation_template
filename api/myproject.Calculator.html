@@ -1,10 +1,10 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="1.1.2.2. myproject.module1" href="myproject.module1.html" /><link rel="prev" title="1.1.2. myproject" href="myproject.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="prev" title="1.1.2. myproject" href="myproject.html" />
 
     <meta name="generator" content="sphinx-3.5.2, furo 2021.02.28.beta28"/>
-        <title>1.1.2.1. myproject.main - </title>
+        <title>1.1.2.1. myproject.Calculator - </title>
       <link rel="stylesheet" href="../_static/styles/furo.css?digest=be5985a4059b5c2cd56ed0804790452beca62674">
     <link rel="stylesheet" href="../_static/pygments.css">
     <link media="(prefers-color-scheme: dark)" rel="stylesheet" href="../_static/pygments_dark.css">
@@ -131,13 +131,11 @@
 <li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">1. API Reference</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label for="toctree-checkbox-1"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="numpy.sum.html">1.1.1. numpy.sum</a></li>
 <li class="toctree-l2 current has-children"><a class="reference internal" href="myproject.html">1.1.2. myproject</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label for="toctree-checkbox-2"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">1.1.2.1. myproject.main</a></li>
-<li class="toctree-l3"><a class="reference internal" href="myproject.module1.html">1.1.2.2. myproject.module1</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">1.1.2.1. myproject.Calculator</a></li>
 </ul>
 </li>
 <li class="toctree-l2 current has-children"><a class="reference internal" href="myproject.html">1.1.2. myproject</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label for="toctree-checkbox-3"><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
-<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">1.1.2.1. myproject.main</a></li>
-<li class="toctree-l3"><a class="reference internal" href="myproject.module1.html">1.1.2.2. myproject.module1</a></li>
+<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">1.1.2.1. myproject.Calculator</a></li>
 </ul>
 </li>
 </ul>
@@ -156,38 +154,20 @@
         <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
-        <div class="section" id="module-myproject.main">
-<span id="myproject-main"></span><h1><span class="section-number">1.1.2.1. </span>myproject.main<a class="headerlink" href="#module-myproject.main" title="Permalink to this headline">¶</a></h1>
-<p class="rubric">Functions</p>
-<div class="table-wrapper"><table class="longtable docutils align-default">
-<colgroup>
-<col style="width: 10%"/>
-<col style="width: 90%"/>
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">difference</span></code>(a, b)</p></td>
-<td><p>Subtracts two integers return result</p></td>
-</tr>
-<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">summation</span></code>(a, b)</p></td>
-<td><p>Compute the arithmetic sum of two <cite>int</cite>.</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">use_calc</span></code>()</p></td>
-<td><p>Tests the functions written in module 1 and returns a Calculator object.</p></td>
-</tr>
-</tbody>
-</table></div>
-<p class="rubric">Classes</p>
-<div class="table-wrapper"><table class="longtable docutils align-default">
-<colgroup>
-<col style="width: 10%"/>
-<col style="width: 90%"/>
-</colgroup>
-<tbody>
-<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Calculator</span></code>()</p></td>
-<td><p>Creates a Calculator to make math operations</p></td>
-</tr>
-</tbody>
-</table></div>
+        <div class="section" id="myproject-calculator">
+<h1><span class="section-number">1.1.2.1. </span>myproject.Calculator<a class="headerlink" href="#myproject-calculator" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="myproject.Calculator">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">myproject.</span></code><code class="sig-name descname"><span class="pre">Calculator</span></code><a class="reference internal" href="../_modules/myproject/module1.html#Calculator"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#myproject.Calculator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.9)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Creates a Calculator to make math operations</p>
+<p class="rubric">Methods</p>
+<dl class="py method">
+<dt id="myproject.Calculator.sum">
+<code class="sig-name descname"><span class="pre">sum</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/myproject/module1.html#Calculator.sum"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#myproject.Calculator.sum" title="Permalink to this definition">¶</a></dt>
+<dd><p>sums two floats and stores the result inside the variable res accessible from the calculator object</p>
+</dd></dl>
+</dd></dl>
 </div>
 <script type="text/x-thebe-config">
     {
@@ -212,15 +192,7 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="myproject.module1.html">
-              <div class="page-info">
-                <div class="context">
-                  <span>Next</span>
-                </div>
-                <div class="title"><span class="section-number">1.1.2.2. </span>myproject.module1</div>
-              </div>
-              <svg><use href="#svg-arrow-right"></use></svg>
-            </a>
+          
           <a class="prev-page" href="myproject.html">
               <svg><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
@@ -242,7 +214,7 @@
               <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
               <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
             |
-            <a class="muted-link" href="../_sources/api/myproject.main.rst"
+            <a class="muted-link" href="../_sources/api/myproject.Calculator.rst"
                rel="nofollow">
               Show Source
             </a>

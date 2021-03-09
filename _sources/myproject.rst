@@ -9,21 +9,11 @@
 
    
    
-   .. rubric:: Functions
-
-   .. autosummary::
-   
-      difference
-      summation
-      use_calc
-   
-   
-
-   
-   
    .. rubric:: Classes
 
    .. autosummary::
+      :nosignatures:
+      :toctree:
    
       Calculator
    
@@ -31,16 +21,15 @@
 
    
    
+   .. rubric:: Functions
+
+   
+   .. autofunction:: difference
+   .. autofunction:: summation
+   .. autofunction:: use_calc
+   
    
 
-
-
-.. rubric:: Modules
-
-.. autosummary::
-   :toctree:
-   :recursive:
-
-   myproject.main
-   myproject.module1
-
+   
+   
+   
