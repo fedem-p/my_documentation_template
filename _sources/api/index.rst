@@ -22,5 +22,7 @@ For the average user's workflows.
 Modules 2 
 -------
 
-.. automodule:: myproject
-   :members:
+.. autosummary::
+   :toctree:
+   
+   myproject
