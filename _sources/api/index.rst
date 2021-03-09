@@ -23,6 +23,6 @@ Modules 2
 -------
 
 .. autosummary::
-   :toctree:
-   
+   :recursive:
+
    myproject
