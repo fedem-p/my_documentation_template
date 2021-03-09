@@ -44,6 +44,8 @@ sphinx:
     autosummary_generate: True
     autosummary_imported_members: True
     html_theme: furo
+    templates_path:
+        - '_templates'
     intersphinx_mapping:
       python:
         - "https://docs.python.org/3"
