@@ -43,6 +43,7 @@ def summation(a: int, b: int):
 def difference(a: int, b: int):
     """
     Subtracts two integers
+    return result
     """
     return a-b
 
