@@ -17,5 +17,10 @@ For the average user's workflows.
 
    numpy.sum
    myproject
-   
 
+
+Modules 2 
+-------
+
+.. automodule:: myproject
+   :members:
