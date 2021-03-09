@@ -17,8 +17,8 @@ def summation(a: int, b: int):
 
     See Also
     --------
-    average : Weighted average
-    std, var, nanmean, nanstd, nanvar
+    subtraction : difference
+    difference
 
     Notes
     -----
