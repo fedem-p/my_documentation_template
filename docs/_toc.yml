@@ -11,7 +11,6 @@
   chapters:
     - file: core/main1
     - file: core/main2
-    - file: intro/Xarray_tutorial.ipynb
 
 - part: API
   chapters:
