@@ -5,13 +5,13 @@
   chapters:
     - file: intro/intro1
     - file: intro/intro2
-    - file: intro/test
+    - file: intro/test.ipynb
 
 - part: Core Code
   chapters:
     - file: core/main1
     - file: core/main2
-    - file: intro/Xarray_tutorial
+    - file: intro/Xarray_tutorial.ipynb
 
 - part: API
   chapters:
