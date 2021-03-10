@@ -2,9 +2,12 @@
 
 [![CodeFactor](https://www.codefactor.io/repository/github/fedem-p/my_documentation_template/badge/main)](https://www.codefactor.io/repository/github/fedem-p/my_documentation_template/overview/main)
 [![Documentation](https://github.com/fedem-p/my_documentation_template/actions/workflows/page_deploy.yml/badge.svg)](https://fedem-p.github.io/my_documentation_template/)
+[![Docker](https://img.shields.io/badge/docker%20repo-Active-green)](https://hub.docker.com/r/federicopuppo/doc_template)
 
 The aim of this [repository](https://github.com/fedem-p/my_documentation_template) is to showcase a simple implementation of automatically generated documentation which uses jupyter-books (build) and github pages (deploy).
 -> like this [one](https://fedem-p.github.io/my_documentation_template/)
+
+check the docker image [here](https://hub.docker.com/r/federicopuppo/doc_template)
 
 ## Mind Map
 
