@@ -17,8 +17,9 @@ def summation(a: int, b: int):
 
     See Also
     --------
-    subtraction : difference
-    difference
+    difference : subtract two numbers
+
+    sum
 
     Notes
     -----

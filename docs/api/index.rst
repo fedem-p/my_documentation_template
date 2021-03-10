@@ -19,10 +19,3 @@ For the average user's workflows.
    myproject
 
 
-Modules 2 
--------
-
-.. autosummary::
-   :recursive:
-
-   myproject

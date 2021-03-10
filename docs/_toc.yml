@@ -3,14 +3,15 @@
 
 - part: Introduction
   chapters:
-  - file: intro/intro1
-  - file: intro/intro2
+    - file: intro/intro1
+    - file: intro/intro2
+    - file: intro/progressFeedback
 
 - part: Core Code
   chapters:
-  - file: core/main1
-  - file: core/main2
+    - file: core/main1
+    - file: core/main2
 
 - part: API
   chapters:
-  - file: api/index
+    - file: api/index
