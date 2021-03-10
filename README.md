@@ -8,7 +8,7 @@ The aim of this [repository](https://github.com/fedem-p/my_documentation_templat
 
 ## Mind Map
 
-1. create a repository
+1. [link](#Getting-started) create a repository
 2. add documentation files in markdown in a specified folder
 3. configure the documentation index and content
 4. add a makefile for building the documentation
@@ -96,7 +96,8 @@ create a repository or go to the repository you want to add documentation.
 
 - Create a `_config.yml` file where to setup your page configuration (see a more in depth guide [here](https://jupyterbook.org/customize/config.html))\
   It's important to insert the right extension in order to build the documentation correctly, here's an example:
-  ```YAML
+
+  ````YAML
   sphinx:
   extra_extensions: - sphinx.ext.viewcode - sphinx.ext.napoleon - sphinx.ext.autodoc - sphinx_autodoc_typehints - sphinx.ext.autosummary - sphinx.ext.intersphinx
 
@@ -112,6 +113,7 @@ create a repository or go to the repository you want to add documentation.
                       - null
       ```
       where `intersphinx_mapping` allows the build to get the documentation online for the specified packages (i.e. `numpy`).
+  ````
 
 ---
 
