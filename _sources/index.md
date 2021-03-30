@@ -1,10 +1,13 @@
-# A template to build documentation from any python code automatically
+# A template to build documentation from any python code automatically 2
 
 [![CodeFactor](https://www.codefactor.io/repository/github/fedem-p/my_documentation_template/badge/main)](https://www.codefactor.io/repository/github/fedem-p/my_documentation_template/overview/main)
 [![Documentation](https://github.com/fedem-p/my_documentation_template/actions/workflows/page_deploy.yml/badge.svg)](https://fedem-p.github.io/my_documentation_template/)
+[![Docker](https://img.shields.io/badge/docker%20repo-Active-green)](https://hub.docker.com/r/federicopuppo/doc_template)
 
 The aim of this [repository](https://github.com/fedem-p/my_documentation_template) is to showcase a simple implementation of automatically generated documentation which uses jupyter-books (build) and github pages (deploy).
 -> like this [one](https://fedem-p.github.io/my_documentation_template/)
+
+check the docker image [here](https://hub.docker.com/r/federicopuppo/doc_template)
 
 ## Mind Map
 
@@ -33,29 +36,36 @@ create a repository or go to the repository you want to add documentation.
 - Create a `_toc.yml` file to setup your documentation table of content (see a more in depth guide [here](https://jupyterbook.org/customize/toc.html))\
   as an example here's some code:
 
-      ```YAML
-          - file: index
-              numbered: true
+  ```YAML
+    - file: index
+      numbered: true
 
-              - part: Introduction
-              chapters:
-              - file: intro/intro1
-              - file: intro/intro2
+    - part: Introduction
+      chapters:
+        - file: intro/intro1
+        - file: intro/intro2
+        - file: intro/test.ipynb
 
-              - part: Core Code
-              chapters:
-              - file: core/main1
-              - file: core/main2
+    - part: Core Code
+      chapters:
+        - file: core/main1
+        - file: core/main2
 
-              - part: API
-              chapters:
-              - file: api/index
-      ```
-      You can skip the manual setup of the _toc.yml file by running the following code:
+    - part: API
+      chapters:
+        - file: api/index
+  ```
 
-              jupyter-book toc ./docs
+  You can skip the manual setup of the \_toc.yml file by running the following code:
 
-      and then modify the structure to your taste
+          jupyter-book toc ./docs
+
+  and then modify the structure to your taste
+  You can add any jupyter notebook as a documentation page like this:
+
+  ```YAML
+  - file: intro/your_notebook.ipynb
+  ```
 
 - add a `requirements.txt` file ( inside `/docs`) with the following dependencies:
 

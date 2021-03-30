@@ -1,11 +1,12 @@
 <!doctype html>
 <html class="no-js">
   <head><meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="1. A Simple intro Chapter" href="intro/intro1.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="1. A Simple intro Chapter" href="intro/intro1.html" />
 
-    <meta name="generator" content="sphinx-3.5.2, furo 2021.02.28.beta28"/>
+    <meta name="generator" content="sphinx-3.5.3, furo 2021.03.20.beta30"/>
         <title>Home - </title>
-      <link rel="stylesheet" href="_static/styles/furo.css?digest=be5985a4059b5c2cd56ed0804790452beca62674">
+      <link rel="stylesheet" href="_static/styles/furo.css?digest=978e1795dfe158b585dda6a8417f6411828bf3ed">
     <link rel="stylesheet" href="_static/pygments.css">
     <link media="(prefers-color-scheme: dark)" rel="stylesheet" href="_static/pygments_dark.css">
     
@@ -151,12 +152,14 @@
         <label class="toc-overlay-icon toc-content-icon" for="__toc">
           <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
         </label>
-        <div class="section" id="a-template-to-build-documentation-from-any-python-code-automatically">
-<h1>A template to build documentation from any python code automatically<a class="headerlink" href="#a-template-to-build-documentation-from-any-python-code-automatically" title="Permalink to this headline">¶</a></h1>
+        <div class="section" id="a-template-to-build-documentation-from-any-python-code-automatically-2">
+<h1>A template to build documentation from any python code automatically 2<a class="headerlink" href="#a-template-to-build-documentation-from-any-python-code-automatically-2" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="https://www.codefactor.io/repository/github/fedem-p/my_documentation_template/overview/main"><img alt="CodeFactor" src="https://www.codefactor.io/repository/github/fedem-p/my_documentation_template/badge/main"/></a>
-<a class="reference external" href="https://fedem-p.github.io/my_documentation_template/"><img alt="Documentation" src="https://github.com/fedem-p/my_documentation_template/actions/workflows/page_deploy.yml/badge.svg"/></a></p>
+<a class="reference external" href="https://fedem-p.github.io/my_documentation_template/"><img alt="Documentation" src="https://github.com/fedem-p/my_documentation_template/actions/workflows/page_deploy.yml/badge.svg"/></a>
+<a class="reference external" href="https://hub.docker.com/r/federicopuppo/doc_template"><img alt="Docker" src="https://img.shields.io/badge/docker%20repo-Active-green"/></a></p>
 <p>The aim of this <a class="reference external" href="https://github.com/fedem-p/my_documentation_template">repository</a> is to showcase a simple implementation of automatically generated documentation which uses jupyter-books (build) and github pages (deploy).
 -&gt; like this <a class="reference external" href="https://fedem-p.github.io/my_documentation_template/">one</a></p>
+<p>check the docker image <a class="reference external" href="https://hub.docker.com/r/federicopuppo/doc_template">here</a></p>
 <div class="section" id="mind-map">
 <h2>Mind Map<a class="headerlink" href="#mind-map" title="Permalink to this headline">¶</a></h2>
 <ol class="simple">
@@ -186,29 +189,32 @@
 <li><p>Add in the <code class="docutils literal notranslate"><span class="pre">/docs</span></code> folder the markdown files for your documentation</p></li>
 <li><p>Create a <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> file to setup your documentation table of content (see a more in depth guide <a class="reference external" href="https://jupyterbook.org/customize/toc.html">here</a>)<br/>
 as an example here’s some code:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>```YAML
-    - file: index
-        numbered: true
+<div class="highlight-YAML notranslate"><div class="highlight"><pre><span></span>  <span class="p p-Indicator">-</span> <span class="nt">file</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">index</span>
+    <span class="nt">numbered</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
 
-        - part: Introduction
-        chapters:
-        - file: intro/intro1
-        - file: intro/intro2
+  <span class="p p-Indicator">-</span> <span class="nt">part</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Introduction</span>
+    <span class="nt">chapters</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="nt">file</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">intro/intro1</span>
+      <span class="p p-Indicator">-</span> <span class="nt">file</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">intro/intro2</span>
+      <span class="p p-Indicator">-</span> <span class="nt">file</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">intro/test.ipynb</span>
 
-        - part: Core Code
-        chapters:
-        - file: core/main1
-        - file: core/main2
+  <span class="p p-Indicator">-</span> <span class="nt">part</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Core Code</span>
+    <span class="nt">chapters</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="nt">file</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">core/main1</span>
+      <span class="p p-Indicator">-</span> <span class="nt">file</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">core/main2</span>
 
-        - part: API
-        chapters:
-        - file: api/index
-```
-You can skip the manual setup of the _toc.yml file by running the following code:
-
-        jupyter-book toc ./docs
-
-and then modify the structure to your taste
+  <span class="p p-Indicator">-</span> <span class="nt">part</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">API</span>
+    <span class="nt">chapters</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="nt">file</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">api/index</span>
+</pre></div>
+</div>
+<p>You can skip the manual setup of the _toc.yml file by running the following code:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>    jupyter-book toc ./docs
+</pre></div>
+</div>
+<p>and then modify the structure to your taste
+You can add any jupyter notebook as a documentation page like this:</p>
+<div class="highlight-YAML notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span> <span class="nt">file</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">intro/your_notebook.ipynb</span>
 </pre></div>
 </div>
 </li>
@@ -544,7 +550,7 @@ Check if there are the links to your modules and functions.</p>
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">A template to build documentation from any python code automatically</a><ul>
+<li><a class="reference internal" href="#">A template to build documentation from any python code automatically 2</a><ul>
 <li><a class="reference internal" href="#mind-map">Mind Map</a></li>
 </ul>
 </li>
