@@ -1,17 +1,18 @@
-- file: index
+format: jb-book
+root: index
+parts:
+- caption: Introduction
   numbered: true
-
-- part: Introduction
   chapters:
-    - file: intro/intro1
-    - file: intro/intro2
-    - file: intro/test.ipynb
-
-- part: Core Code
+  - file: intro/intro1
+  - file: intro/intro2
+  - file: intro/test.ipynb
+- caption: Core Code
+  numbered: true
   chapters:
-    - file: core/main1
-    - file: core/main2
-
-- part: API
+  - file: core/main1
+  - file: core/main2
+- caption: API
+  numbered: true
   chapters:
-    - file: api/index
+  - file: api/index
