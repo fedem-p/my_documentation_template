@@ -1,7 +1,7 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title:
+title: Automatic Documentation
 author: Federico Puppo
 logo: "./images/LogoDotOrg_Black.png"
 # only_build_toc_files: true
@@ -21,13 +21,12 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
-  use_edit_page_button      : false  # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
-  extra_navbar              : Powered by <a href="https://jupyterbook.org">Jupyter Book</a>  # Will be displayed underneath the left navbar.
-  extra_footer              : "Mantained by Federico Puppo"  # Will be displayed underneath the footer.
+  use_edit_page_button: false # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
+  extra_navbar: Powered by <a href="https://jupyterbook.org">Jupyter Book</a> # Will be displayed underneath the left navbar.
+  extra_footer: "Mantained by Federico Puppo" # Will be displayed underneath the footer.
 
 latex:
-  latex_engine              : pdflatex  # one of 'pdflatex', 'xelatex' (recommended for unicode), 'luatex', 'platex', 'uplatex'
-
+  latex_engine: pdflatex # one of 'pdflatex', 'xelatex' (recommended for unicode), 'luatex', 'platex', 'uplatex'
 
 sphinx:
   extra_extensions:
@@ -45,7 +44,7 @@ sphinx:
     autosummary_imported_members: True
     html_theme: furo
     templates_path:
-        - '_templates'
+      - "_templates"
     intersphinx_mapping:
       python:
         - "https://docs.python.org/3"
