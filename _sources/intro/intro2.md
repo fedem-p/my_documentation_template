@@ -1,7 +1,5 @@
-# A Simple intro Chapter 2
+# A Simple guide to markdown
 
-
-# Hardware support
 
 
 ## Heading 2
